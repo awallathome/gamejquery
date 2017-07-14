@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html land="en">
+<head>
+	<meta charset="utf-8">
+	<title>Codefast</title>
+	 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  
+  	<script src="https://code.jquery.com/jquery.js"></script>
+ </head>
+<body>
+<p >How dextrous are you feeling today? Press any key to begin and try to keep up typing what you see on the screen.</p>
+
+<p id="typethis"></p>
+
+<input id="userkey" maxlength=1>
+
+</input>
+
+
+</body>
+
+<!--HTML GOES UP THERE^-->
+<!--SCRIPT GOES BELOW -->
+
+<script> 		
+//keys the computer picks
+var keys = ["0","1","2","3","4","5","6","7","8","9","a","b","c","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",";","=","-",",","/","[","]","'"]
+
+
+// algorithm to pick from the array
+function compChoose() {
+	keys[Math.floor(Math.random() * keys.length)]
+};
+
+
+// accuracy rating
+var accuracy = []
+
+
+// computer shows a key for you to press
+var toType = function (){
+	$("#userkey").on("keypress",);
+	$("#typethis").innerHTML = compChoose(); 
+	};
+
+
+//the keys hit ;) by the player
+var keyshit = function() {
+	$("#userkey").on("keypress", function() {
+		$(".input").empty();	
+		function getTyped() {
+		$("#userkey").innerHTML = Math.random();
+		}
+};
+
+
+</script>
+</html>
